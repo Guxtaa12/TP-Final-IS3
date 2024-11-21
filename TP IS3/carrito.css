@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcc00; /* Color similar al botón de agregar al carrito */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 50px; /* Margen de 50px a la izquierda */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el mouse */
+}
+
+.icono-casita, .icono-carro, .icono-persona {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.cart-title {
+    margin-left: 50px; /* Margen de 50px a la izquierda */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    height: 50px; /* Más alto */
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px; /* Más corto */
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    width: 80%; /* Más ancho */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart-item:hover {
+    background-color: #f0f0f0;
+}
+
+.cart-item-image {
+    width: 40px; /* Más grande */
+    height: 40px; /* Más grande */
+    margin-right: 10px;
+}
+
+.cart-item-name {
+    flex-grow: 1;
+    font-size: 18px; /* Más grande */
+}
+
+.cart-item-price {
+    margin-left: 10px;
+    font-size: 18px; /* Más grande */
+}
+
+.remove-button {
+    margin-left: 10px;
+    padding: 10px 15px; /* Más grande */
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px; /* Más grande */
+}
+
+.remove-button:hover {
+    background-color: #ff9900;
+}
+
+.remove-button:active {
+    background-color: #cc7a00;
+}
+
+#cart-total {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10%;
+}
+
+#clear-cart {
+    padding: 15px 30px; /* Más grande */
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#clear-cart:hover {
+    background-color: #ff9900;
+}
+
+#clear-cart:active {
+    background-color: #cc7a00;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+/* Estilos para centrar y agrandar el contenedor del resumen del carrito */
+#cart-summary {
+    width: 80%; /* Ajusta el ancho según tus necesidades */
+    max-width: 400px; /* Ancho máximo para que no se extienda demasiado */
+    margin: 20px auto; /* Centrar el contenedor */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center; /* Centrar el contenido dentro del contenedor */
+    background-color: #f9f9f9;
+}
+
+/* Estilo para el título del resumen */
+#cart-summary h3 {
+    font-size: 2em; /* Tamaño de fuente mayor */
+    margin-bottom: 20px;
+}
+
+/* Estilo para los textos de subtotal, envío y total */
+#cart-summary p {
+    font-size: 1.5em; /* Tamaño de fuente mayor */
+    margin: 15px 0;
+}
+
+/* Estilo para los valores de subtotal, envío y total */
+#cart-summary span {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.5em; /* Tamaño de fuente mayor */
+}
+ 

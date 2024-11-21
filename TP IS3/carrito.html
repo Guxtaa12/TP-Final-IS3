@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Mercadito Baratito</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Mercadito Baratito</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="iconoCasita.webp" alt="Inicio" class="icono-casita"></a></li>
+                <li><a href="carrito.html"><img src="iconoCarro.webp" alt="Carrito" class="icono-carro"></a></li>
+                <li><a href="#"><img src="iconoPersona.webp" alt="Persona" class="icono-persona"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="cart-title">Carrito de Compras</h2>
+        
+        <!-- Productos en el carrito -->
+        <div id="cart-items"></div>
+
+        <!-- Resumen del carrito -->
+        <div id="cart-summary">
+            <h3>Resumen</h3>
+            <p>Subtotal: $<span id="subtotal">0</span></p>
+            <p>Envío: <span id="envio"></span></p>
+            <p>Total: $<span id="total">0</span></p>
+        </div>
+
+        <!-- Botones de acciones -->
+        <button id="clear-cart">Vaciar Carrito</button>
+    </main>
+    <script src="carrito.js"></script>
+</body>
+</html>
